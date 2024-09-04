@@ -905,8 +905,8 @@ project style
 
 @media (min-width: 768px) {
   .md\:py-20 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -914,8 +914,8 @@ project style
 
 @media (min-width: 768px) {
   .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 18rem;
+    padding-right: 0rem;
   }
 }
 
@@ -930,6 +930,7 @@ project style
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.5rem;
 }
 
 .gap-8 {
@@ -942,7 +943,7 @@ project style
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -1080,9 +1081,19 @@ li.md\:w-auto.flex.items-center {
 @media (max-width: 767px) {
   .flex {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
   }
 
   .gap-8 {
